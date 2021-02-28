@@ -9,6 +9,7 @@ ChessPeices.o: $(SRC)ChessPeices.cc
 main.o: $(SRC)main.cc $(SRC)chessboard.o
 		$(CXX) -Wall -o main.o  -I$(INCLUDE) $(SRC)ChessPeices.o  $(SRC)chessboard.o $(SRC)main.cc -lncursesw
 		
-
+clean:
+	rm $(SRC)chessboard.o $(SRC)ChessPeices.o
 
 
