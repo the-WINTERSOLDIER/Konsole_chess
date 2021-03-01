@@ -11,9 +11,9 @@ class piece{
         int cell_indx_x;
         int cell_indx_y;
         //vector<pair<int , int > >marked_positions;//list of all the position that are under attack by this peice
-        //▙▟▙▟ ▜▐▌▛  ▙➕▟  ▜▛  ▗▄▄▙   ▐▌
-        //▐██▌ ▐▟▙▌  ▐▓▓▌  ██  ▝▘▓▞  ▐▓▓▌ 
-        //▟██▙ ▟▓▓▙  ▟▓▓▙ ▟██▙ ▄▟▓▙  ▟▓▓▙
+        //▙▟▙▟ ▜▐▌▛  ▙➕▟  ▜▛  ▗▄▄▙   ▐▌      
+        //▐██▌ ▐▟▙▌  ▐██▌  ██  ▝▘█▞  ▐██▌ 
+    //▟   ▀▀▀▀ ▀▀▀▀  ▀▀▀▀ ▀▀▀▀ ▀▀▀▀  ▀▀▀▀            ██▙ ▟▓▓▙  ▟▓▓▙ ▟██▙ ▄▟▓▙  ▟▓▓▙
        // const char *king[3]=    {" ▙➕▟" , "▐▓▓▌", " ▟▓▓▙"};
        // const char *queen[3]=   {"▜▐▌▛","▐▟▙▌","▟▓▓▙"} ;
        // const char * bishop[3]= {" ▜▛ "," ██ ","▟██▙" };
@@ -40,7 +40,7 @@ class piece{
 };
 class rook:public piece{
     private:
-        const char *pc[3]=    {"▙▟▙▟" , "▐██▌","▟██▙"};
+        const char *pc[3]=    {"▙▟▙▟" , "▐██▌","▀▀▀▀"};//  ▟██▙"};
     public: 
        ~rook();
         rook(bool piece_color,int y,int x);
@@ -48,7 +48,7 @@ class rook:public piece{
 };
 class knight:public piece{
     private:
-        const char *pc[3]=   {"▗▄▄▙","▝▘█▞","▄▟█▙"};
+        const char *pc[3]=   {"▗▄▄▙","▝▘█▞","▀▀▀▀"}; //▄▟█▙"};
     public: 
         ~knight();
         knight(bool piece_color,int y,int x);
@@ -57,7 +57,7 @@ class knight:public piece{
 
 class bishop :public piece{
     private:
-         const char * pc[3]= {" ▜▛ "," ██ ","▟██▙" };
+         const char * pc[3]= {" ▜▛ "," ██ ","▀▀▀▀"};//"▟██▙" };
     public: 
         ~bishop();
         bishop(bool piece_color,int y,int x);
@@ -66,7 +66,7 @@ class bishop :public piece{
 
 class king :public piece{
     private:
-        const char *pc[3]=    {"▙➕▟" , "▐██▌", "▟██▙"};
+        const char *pc[3]=    {"▙➕▟" , "▐██▌","▀▀▀▀"};//, "▟██▙"};
     public: 
         ~king();
         king(bool piece_color,int y,int x);
@@ -76,7 +76,7 @@ class king :public piece{
 
 class queen :public piece{
     private:
-         const char *pc[3]=   {"▜▐▌▛","▐▟▙▌","▟██▙"} ;
+         const char *pc[3]=   {"▜▐▌▛","▐▟▙▌","▀▀▀▀"};//,"▟██▙"} ;
     public: 
         ~queen();
         queen(bool piece_color,int y,int x);
@@ -86,7 +86,7 @@ class queen :public piece{
 
 class  pawn:public piece{
     private:
-         const char * pc[3]=   {" ▐▌ ","▐██▌","▟██▙"};
+         const char * pc[3]=   {" ▐▌ ","▐██▌","▀▀▀▀"};//"▟██▙"};
     public: 
         ~pawn();
         pawn(bool piece_color,int y,int x);

@@ -1,6 +1,7 @@
 #include<utility>
 #include<vector>
 #include<locale>
+#include<iostream>
 #include<ChessPeices.hh>
 #include<chessboard.hh>
 
@@ -58,10 +59,15 @@
                          attr=((i+j)%2==0?COLOR_PAIR(5):COLOR_PAIR(4));
 
                     }
+
+
                     (chess_grid[i][j].second)->print_piece(win,attr,i,j,c.chess_cell_sizey,
                                                 c.chess_cell_sizex,(chess_grid[i][j].second)->getrow());
                 }
+                std::cout<<chess_grid[i][j].first<<" ";
+
             }
+            std::cout<<std::endl;
         }
     refresh();
     wgetch(win);
