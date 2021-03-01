@@ -1,8 +1,7 @@
 #ifndef CHESSBOARD_H
 #define CHESSBOARD_H
-//#include<ncursesw/ncurses.h>
+#include<ncursesw/ncurses.h>
 
-#include<ChessPeices.hh>
 
 class ChessBoard{
     private :

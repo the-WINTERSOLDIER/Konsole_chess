@@ -1,7 +1,9 @@
-#include<chessboard.hh>
 #include<utility>
 #include<vector>
 #include<locale>
+#include<ChessPeices.hh>
+#include<chessboard.hh>
+
  int main(){
     setlocale(LC_ALL,"");//eneble unicode support 
     initscr();
