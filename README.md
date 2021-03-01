@@ -6,7 +6,7 @@ Play chess from terminal
     <img align="center" alt="Screenshot1" src="screenshot/2021-02-28-19:51:25.png"></img>
 </p>
 
-###Installation
+### Installation
 
 1.Open up the terminal in your preffered directory and clone this project.
 ```sh
