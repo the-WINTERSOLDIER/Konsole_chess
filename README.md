@@ -3,7 +3,7 @@ Play chess from terminal
 >written in C++
 
 <p align="center">
-    <img align="center" alt="Screenshot1" src="screenshot/2021-02-28-19:51:25.png"></img>
+    <img align="center" alt="Screenshot1" src="screenshot/2021-03-01-15:39:11.png"></img>
 </p>
 
 ### Installation
